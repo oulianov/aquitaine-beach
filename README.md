@@ -4,7 +4,7 @@ Group project to discover beach activities in Aquitaine using an Elastic Search-
 
 ![Screenshot of the app](screenshot-app.png)
 
-**[Watch a video demo of the app here!](https://drive.google.com/file/d/1X08GaSdhE1-JSKdCt7YIBH3LwGX-fTWF/view)**
+**[Watch a video showing off the app here!](https://drive.google.com/file/d/1X08GaSdhE1-JSKdCt7YIBH3LwGX-fTWF/view)**
 
 Please find the report (answers to questions and screenshots) for the labs 1 to 3 in `report-lab-1-2-3.pdf`.
 
@@ -14,7 +14,7 @@ Group members : Nicolas Boussenina, Nicolas Oulianov, Julien Liu
 
 ### 1. Allow Elastic search to communicate with the app
 
-In the `elastic.yaml` configuration file, add the following lines somewhere:
+In the `elasticsearch-7.10.0/config/elasticsearch.yml` configuration file, add the following lines somewhere:
 
 ```
 http.cors:
@@ -99,7 +99,7 @@ npm i
 First, make sure the Elastic Search is running. If not, run it.
 
 ```
-./bin/elasticsearch
+./elasticsearch-7.10.0/bin/elasticsearch
 ```
 
 Compile the code and start the server.
