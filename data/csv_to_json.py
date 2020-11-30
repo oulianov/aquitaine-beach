@@ -17,7 +17,7 @@ col_info_compl = [
 ]
 
 
-def clean_info_compl(txt):
+def clean_info_compl(txt, return_list=False):
     # INFO_COMPLEMENTAIRES is a list of tags separated by #
     tags = txt.split("#")
     tags = [t.strip() for t in tags]
@@ -25,8 +25,14 @@ def clean_info_compl(txt):
     tags = list(set(tags))
     # Order them by alphabetical order
     tags.sort()
-    txt = " # ".join(tags).strip()
+    if return_list:
+        txt = tags
+    else:
+        txt = " # ".join(tags).strip()
     return txt
+
+
+df["TYPE"] = df["TYPE"].apply(lambda x: clean_info_compl(x, True))
 
 
 def merge_info_compl(line):
@@ -68,7 +74,7 @@ def merge_address(line):
                 break
         if not info_already_in_infos_clean:
             infos_clean.append(info)
-    address = ", ".join(infos_clean).strip()
+    address = infos_clean  # ", ".join(infos_clean).strip()
     return address
 
 

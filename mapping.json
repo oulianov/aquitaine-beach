@@ -1,0 +1,63 @@
+{
+  "properties": {
+    "@timestamp": {
+      "type": "date"
+    },
+    "adresse": {
+      "type": "text",
+      "analyzer": "french"
+    },
+    "code_postal": {
+      "type": "long"
+    },
+    "commune": {
+      "type": "keyword"
+    },
+    "date_derniere_maj": {
+      "type": "date",
+      "format": "dd/MM/yyyy"
+    },
+    "description": {
+      "type": "text",
+      "analyzer": "french"
+    },
+    "id": {
+      "type": "keyword"
+    },
+    "latitude": {
+      "type": "double"
+    },
+    "longitude": {
+      "type": "double"
+    },
+    "mail": {
+      "type": "keyword"
+    },
+    "nom": {
+      "type": "text"
+    },
+    "ouverture": {
+      "type": "text",
+      "analyzer": "french"
+    },
+    "site_web": {
+      "type": "keyword"
+    },
+    "tarifs": {
+      "type": "text",
+      "analyzer": "french"
+    },
+    "tel": {
+      "type": "text"
+    },
+    "tel_mob": {
+      "type": "text"
+    },
+    "type": {
+      "type": "keyword"
+    },
+    "location": {
+      "type": "geo_point"
+    }
+  }
+}
