@@ -32,7 +32,7 @@ def clean_info_compl(txt, return_list=False):
     return txt
 
 
-df["TYPE"] = df["TYPE"].apply(lambda x: clean_info_compl(x, True))
+df["TYPE"] = df["TYPE"].apply(lambda x: clean_info_compl(x, False))
 
 
 def merge_info_compl(line):
@@ -74,7 +74,7 @@ def merge_address(line):
                 break
         if not info_already_in_infos_clean:
             infos_clean.append(info)
-    address = infos_clean  # ", ".join(infos_clean).strip()
+    address = ", ".join(infos_clean).strip()
     return address
 
 
