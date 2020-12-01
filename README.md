@@ -105,7 +105,7 @@ First, make sure the Elastic Search is running. If not, run it.
 Compile the code and start the server.
 
 ```
-npm
+npm start
 ```
 
 Then go to `localhost:3000` in your browser and access the app. Congratulation, you can now discover all the beach activities in Aquitaine!
