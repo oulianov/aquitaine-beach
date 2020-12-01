@@ -85,7 +85,7 @@ If you need to update nodejs, I suggest you do it using `nvm`. [This guide will 
 Go to the my-app repository.
 
 ```
-cd my-app
+cd mon-app
 ```
 The project uses React.Js along with its ```node_modules```. So you need to install all the dependencies related to this project. We used for example ```react-bootstrap```, ```react-elasticsearch``` etc.
 To install the dependencies just run : 
