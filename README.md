@@ -112,4 +112,4 @@ Then go to `localhost:3000` in your browser and access the app. Congratulation, 
 
 ## Credits
 
-We used [this public dataset](https://www.data.gouv.fr/en/datasets/liste-des-plages-et-activites-de-plage-en-aquitaine-4/) for the project.
+We used [this public dataset](https://www.data.gouv.fr/en/datasets/liste-des-plages-et-activites-de-plage-en-aquitaine-4/) for the project, that we processed using a custom script from csv format to njson using a custom script. If you want to try the script yourself, you'll need to place [this csv file](https://www.data.gouv.fr/en/datasets/r/7d45e099-6cc4-4d37-93f8-9622cbdbf19f) renamed as `plages.csv` in the same folder as `data/csv_to_json.py`.
