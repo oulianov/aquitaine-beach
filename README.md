@@ -22,7 +22,7 @@ http.cors:
   allow-origin: /https?:\/\/localhost(:[0-9]+)?/
 ```
 
-This will allow Elastic Search to communicate with the local app.
+This will allow Elastic Search to communicate with the local app. Otherwise, we would have some ```CORS``` issues related to fetching the REST API over a web client.
 
 ### 2. Import the dataset into Elastic Search
 
@@ -87,8 +87,8 @@ Go to the my-app repository.
 ```
 cd my-app
 ```
-
-Install dependencies. 
+The project uses React.Js along with its ```node_modules```. So you need to install all the dependencies related to this project. We used for example ```react-bootstrap```, ```react-elasticsearch``` etc.
+To install the dependencies just run : 
 
 ```
 npm i
